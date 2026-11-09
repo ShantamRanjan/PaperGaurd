@@ -1,0 +1,16 @@
+[
+  {
+    "id": "IN-MTA-2021-SECURITY-DEPOSIT-01",
+    "applies_to": "rent_agreement",
+    "field": "amounts.security_deposit.value",
+    "operator": "gt",
+    "compare_to": "amounts.monthly_rent.value",
+    "multiplier": 2,
+    "quote_field": "clauses.security_deposit.quote",
+    "severity": "high",
+    "message": "The residential security deposit is more than two months' rent under the Model Tenancy Act template. Local state law may differ, so verify the rule for the property's location.",
+    "source": "Government of India, Model Tenancy Act 2021, section 11: https://www.mohua.gov.in/upload/whatsnew/60b7acb90a086Model-Tenancy-Act-English-02.06.2021.pdf",
+    "reviewed_on": "2026-11-09"
+  }
+]
+
